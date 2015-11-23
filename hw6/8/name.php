@@ -29,7 +29,7 @@ if (isset($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['age'])) 
     fwrite($newFile, $string);
     fclose($newFile);
     echo "Privet " . $_POST['name'] . ", tebe : " . $_POST['age'] . " year! starichok";
-} //НЕпаштет!
+}
 elseif (!empty(file("info.txt")) && isset($_POST['submit'])) {
     while (!feof("info.txt")) {
         $string = file_get_contents("info.txt");
