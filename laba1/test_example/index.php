@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Denis
- * Date: 14.09.2015
- * Time: 1:15
- */
 header("Content-type: text/html; charset=utf-8");
 if (!isset($_POST['test'])) {
     $title = 'Пройдите тест!';
